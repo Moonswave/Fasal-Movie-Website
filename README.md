@@ -54,14 +54,14 @@ REACT_APP_OMDB_API_KEY=your_api_key_here
     App.js - The main App component.
     index.js - The entry point of the application.
     
-## Future Enhancements**
+## Future Enhancements
 
-### Add user authentication to save playlists for individual users.
+ Add user authentication to save playlists for individual users.
 
-### Implement pagination for movie search results.
+ Implement pagination for movie search results.
 
-### Add more details and functionalities to the movie details page.
+ Add more details and functionalities to the movie details page.
 
-## Contributing**
+## Contributing
 
-### Contributions are welcome! Please fork the repository and submit a pull request.
+ Contributions are welcome! Please fork the repository and submit a pull request.
