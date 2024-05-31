@@ -8,13 +8,18 @@ const Header = () => {
     <>
     <div className='Header'>
       <div className='Header-nav'> 
-        <NavLink to={`/`}>
+        <NavLink to={`/home`}>
           <h1>Home</h1>
         </NavLink>
-        <h1>Movies</h1>
+        <NavLink to={`/home`}>
+          <h1>Movies</h1>
+        </NavLink>
         <h1>Web Series</h1>
         <NavLink to={`/public`}>
-          <h1>Playlist</h1>
+          <h1> Public Playlist</h1>
+        </NavLink>
+        <NavLink to={`/private-login`}>
+          <h1> Private Playlist</h1>
         </NavLink>
       </div>
       <div className='Search'>
@@ -22,7 +27,7 @@ const Header = () => {
         <Search />
       </div>
       <div className='user'>
-        <img src="movie-website/src/user.png" alt='user' color='white'/>
+        <img src="https://img.icons8.com/?size=100&id=22396&format=png&color=000000" alt='user' />
       </div>
     </div>
     </>

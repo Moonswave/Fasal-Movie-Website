@@ -1,3 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
 .All {
   background-image: url('./home-background.png');
   background-size: cover;
@@ -155,11 +162,12 @@
 }
 
 .public-button{
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   border: 2px solid white;
   padding: 10px;
   transition: background-color 0.2s ease, color 0.3s ease;
+  background-color: black;
 }
 
 .public-button:hover{
@@ -176,5 +184,147 @@
 }
 
 .user{
-  order: 5;
+  background-color: rgba(146, 146, 146, 0.501);
+}
+
+.loginPage{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/97/4a/0b/974a0bc3ef606c46538f46bfe41055ce.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #bca9a9;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.768);
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  width: 450px;
+  max-width: 420px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.container h1{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container input[type="email"],
+input[type="password"], input[type="text  "] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+.container button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+
+.container a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.signinPage{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/97/4a/0b/974a0bc3ef606c46538f46bfe41055ce.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #bca9a9;
+
+}
+
+.PublicPlaylist{
+  background-image: url('./home-background.png');
+  background-size: cover;
+  background-position: center;
+  height:100em;
+}
+
+.PublicPlaylist h1{
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.PublicPlaylist ul{
+  margin: 0%;
+}
+
+.publiclist{
+  border: 2px solid white;
+  display: flex;
+  margin: 20px;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.publiclist .list-poster{
+  height: 150px;
+  width: 150px;
+  border: 2px solid rgb(0, 179, 255);
+  border-radius: 30px;
+}
+
+.publicContent{
+  margin-left: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.noMovie{
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.delete{
+  background-color: white;
+  border: none;
+  height: 50px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

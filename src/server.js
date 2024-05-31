@@ -2,16 +2,22 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const hbs = require("hbs");
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'build')));
+const tempelatePath=path.join(__dirname,'../tempelates')
 
-// Handle React routing, return all requests to React app
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+app.use(express.json())
+app.set("view engine","hbs")
+app.set("views", tempelatePath)
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+app.get("/login",(req, res)=>{
+    res.render("login")
+})
+
+app.get("/login",(req, res)=>{
+    res.render("login")
+})
+
+app.listen(3000, () => {
+  console.log("Server is running on port");
+})
