@@ -1,38 +1,180 @@
-.App {
+.All {
+  background-image: url('./home-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.movie-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 35px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.Card {
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(210, 51, 51, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  height: 450px;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+  background-color: rgba(23, 14, 75, 0.396);
+}
+
+.card-info {
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-info p {
+  font-size: 20px; 
+  margin: 20px 0; 
+  color: #ffffff; 
+  font-style: italic;
+  text-decoration:aquamarine;
+}
+.card-info img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: 300px;
+  border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
+  background-color: #333333a1; 
+  height: 80px; 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: row;
+  justify-content:space-around;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.Header h1 {
+  color: #ffffff; 
+  margin: 0%;
+  font-size: 18px; 
+}
+
+.Header img {
+  height: 60px; 
+  width: 60px;
+  border: 2px solid white;
+}
+
+.Header .Header-nav{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.Search{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 5px;
+  margin-left: 5px;
+}
+
+.Searchbar{
+  height: 20px;
+  text-align: left;
+  padding-left: 5px;
+  font-size: large;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(0, 0, 0);
+}
+
+.Errormsg{
   color: white;
+  align-items: center;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Singlebackground{
+  background-image: url('./home-background.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-card{
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding-top: 80px;
+}
+
+.singleimage{
+  border-radius: 20px;
+  border: 10px dotted white;
+  margin-right: 50px;
+}
+
+.card-content{
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  gap: 20px;
+}
+
+.Singleword{
+  color: white;
+  font-weight: 700;
+  font-size:1.5em;
+  margin-top: 20px;
+}
+
+.single-button{
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 50px;
+}
+
+.public-button{
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px;
+  transition: background-color 0.2s ease, color 0.3s ease;
+}
+
+.public-button:hover{
+  background-color: white;
+  color: black;
+}
+
+.public-background{
+  
+  background-image: url('./home-background.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.user{
+  order: 5;
 }
