@@ -39,7 +39,7 @@ REACT_APP_OMDB_API_KEY=your_api_key_here
 
    npm start
 
-## Project Structure**
+## Project Structure
 
   src/
     components/
